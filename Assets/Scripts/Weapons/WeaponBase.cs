@@ -1,9 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public abstract class WeaponBase : MonoBehaviour
 {
+    public Sprite Icon;
+
     public abstract void Fire(Cat cat, Vector3 mousePos);
 
     protected Rigidbody Throw(Rigidbody prefab, float speed, Cat cat, Vector3 mousePos)

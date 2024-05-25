@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ClickProcessor : MonoBehaviour
+public class WeaponProcessor : MonoBehaviour
 {
     public List<WeaponBase> Weapons;
 
@@ -9,11 +9,15 @@ public class ClickProcessor : MonoBehaviour
 
     public Cat Cat;
 
+    public WeaponPanelUI ui;
+
     private Camera mainCamera;
 
     private void Start()
     {
         mainCamera = Camera.main;
+
+        ui.SetWeapons(Weapons);
     }
 
     private void Update()
