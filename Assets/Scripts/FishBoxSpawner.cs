@@ -3,10 +3,9 @@ using UnityEngine;
 
 public class FishBoxSpawner : MonoBehaviour
 {
-    public float horSpeed;
     public BoxCollider spawnArea;
 
-    public void SpawnFish(GameObject prefab)
+    public void SpawnFish(GameObject prefab, float horSpeed)
     {
         Vector3 spawnPoint = GetRandomPointInBoxCollider(spawnArea);
         var newOne = Instantiate(prefab, spawnPoint, Quaternion.identity);

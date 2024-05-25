@@ -452,11 +452,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80a7297f9e1b27b4fb44e25a72387252, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CurrentLevel: {fileID: 11400000, guid: 1ae95e43fd0726949bf2f819f12a24a7, type: 2}
   FishSpawners:
   - {fileID: 1811036701}
   - {fileID: 930265294}
   FishPrefabs:
   - {fileID: 51991938497825665, guid: 3594148db2e151e468cb8d08ddb039ac, type: 3}
+  FishSkins: []
   FishPerSecond: 10
 --- !u!114 &458631086
 MonoBehaviour:
