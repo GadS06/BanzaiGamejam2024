@@ -6,15 +6,15 @@ public class WeaponPanelUI : MonoBehaviour
 {
     public WeaponUI ElementPrefab;
 
-    public void SetWeapons(List<WeaponBase> weapons)
+    public void SetWeapons(List<WeaponBase> weapons, int selectedIdx)
     {
         foreach (Transform child in transform)
             Destroy(child.gameObject);
 
-        foreach(var w in weapons)
+        for (int i = 0; i < weapons.Count; i++)
         {
             var newOne = Instantiate(ElementPrefab, transform);
-            newOne.SetWeapon(w);
+            newOne.SetWeapon(weapons[i], i == selectedIdx);
         }
     }
 }

@@ -13,15 +13,30 @@ public class WeaponProcessor : MonoBehaviour
 
     private Camera mainCamera;
 
+    private int selectedWeapon;
+
     private void Start()
     {
         mainCamera = Camera.main;
 
-        ui.SetWeapons(Weapons);
+        ui.SetWeapons(Weapons, selectedWeapon);
     }
 
     private void Update()
     {
+        if (Input.GetButtonDown("Hotkey 1"))
+            Select(0);
+        if (Input.GetButtonDown("Hotkey 2"))
+            Select(1);
+        if (Input.GetButtonDown("Hotkey 3"))
+            Select(2);
+        if (Input.GetButtonDown("Hotkey 4"))
+            Select(3);
+        if (Input.GetButtonDown("Hotkey 5"))
+            Select(4);
+        if (Input.GetButtonDown("Hotkey 6"))
+            Select(5);
+
         if (Input.GetMouseButtonDown(0))
         {
             Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
@@ -31,8 +46,16 @@ public class WeaponProcessor : MonoBehaviour
             {
                 Vector3 spawnPosition = hit.point;
                 //Instantiate(objectToSpawn, spawnPosition, Quaternion.identity);
-                Weapons[0].Fire(Cat, hit.point);
+                Weapons[selectedWeapon].Fire(Cat, hit.point);
             }
         }
+    }
+
+    private void Select(int n)
+    {
+        selectedWeapon = n;
+        if (selectedWeapon >= Weapons.Count)
+            selectedWeapon = Weapons.Count - 1;
+        ui.SetWeapons(Weapons, selectedWeapon);
     }
 }

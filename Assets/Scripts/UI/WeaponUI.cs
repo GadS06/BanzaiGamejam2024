@@ -8,9 +8,10 @@ public class WeaponUI : MonoBehaviour
     public Image Background;
     public Image Image;
 
-    public void SetWeapon(WeaponBase weapon)
+    public void SetWeapon(WeaponBase weapon, bool selected)
     {
         Image.sprite = weapon.Icon;
         Label.text = "";
+        Background.color = selected ? Color.green : Color.white;
     }
 }
