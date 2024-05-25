@@ -1,16 +1,29 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class FishBoxSpawner : MonoBehaviour
 {
-    public Rigidbody fishPrefab;
     public float horSpeed;
     public BoxCollider spawnArea;
 
-    public void SpawnFish()
+    public void SpawnFish(GameObject prefab)
     {
         Vector3 spawnPoint = GetRandomPointInBoxCollider(spawnArea);
-        var newFish = Instantiate(fishPrefab, spawnPoint, Quaternion.identity);
-        newFish.velocity = horSpeed * new Vector3(Random.Range(0.8f, 1.2f), Random.Range(-0.2f, 0.2f), 0);
+        var newOne = Instantiate(prefab, spawnPoint, Quaternion.identity);
+        var velocity = horSpeed * new Vector3(Random.Range(0.8f, 1.2f), Random.Range(-0.2f, 0.2f), 0);
+        FindAndPushChildRigidbodies(newOne.transform, velocity);
+    }
+
+    void FindAndPushChildRigidbodies(Transform parent, Vector3 velocity)
+    {
+        Rigidbody rb = parent.GetComponent<Rigidbody>();
+        if (rb != null)
+            rb.velocity = velocity;
+
+        foreach (Transform child in parent)
+        {
+            FindAndPushChildRigidbodies(child, velocity);
+        }
     }
 
     private Vector3 GetRandomPointInBoxCollider(BoxCollider collider)

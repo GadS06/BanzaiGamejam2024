@@ -455,6 +455,8 @@ MonoBehaviour:
   FishSpawners:
   - {fileID: 1811036701}
   - {fileID: 930265294}
+  FishPrefabs:
+  - {fileID: 51991938497825665, guid: 3594148db2e151e468cb8d08ddb039ac, type: 3}
   FishPerSecond: 10
 --- !u!114 &458631086
 MonoBehaviour:
