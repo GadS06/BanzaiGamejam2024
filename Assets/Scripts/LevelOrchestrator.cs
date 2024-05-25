@@ -11,8 +11,7 @@ public class LevelOrchestrator : MonoBehaviour
     public List<GameObject> FishPrefabs;
     public List<GameObject> FishSkins;
     public float FishPerSecond;
-    private float LastFishTime;
-    private float LevelStartTime;
+    public float LevelStartTime;
 
     public void Start()
     {
