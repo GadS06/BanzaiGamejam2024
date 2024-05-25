@@ -4,24 +4,33 @@ using UnityEngine;
 public class FishBoxSpawner : MonoBehaviour
 {
     public BoxCollider spawnArea;
+    public bool reverse;
 
-    public void SpawnFish(GameObject prefab, float horSpeed)
+    public void SpawnFish(GameObject prefab, float horSpeed, GameObject skin)
     {
         Vector3 spawnPoint = GetRandomPointInBoxCollider(spawnArea);
         var newOne = Instantiate(prefab, spawnPoint, Quaternion.identity);
         var velocity = horSpeed * new Vector3(Random.Range(0.8f, 1.2f), Random.Range(-0.2f, 0.2f), 0);
-        FindAndPushChildRigidbodies(newOne.transform, velocity);
+        FindAndPushChildRigidbodiesAndAddSkins(newOne.transform, velocity, skin);
     }
 
-    void FindAndPushChildRigidbodies(Transform parent, Vector3 velocity)
+    void FindAndPushChildRigidbodiesAndAddSkins(Transform parent, Vector3 velocity, GameObject skin)
     {
         Rigidbody rb = parent.GetComponent<Rigidbody>();
         if (rb != null)
             rb.velocity = velocity;
 
+        var frt = parent.GetComponent<FishReplacementTag>();
+        if (frt != null)
+        {
+            var newSkin = Instantiate(skin, parent);
+            if (reverse)
+                newSkin.transform.Rotate(0, 180, 0);
+        }
+
         foreach (Transform child in parent)
         {
-            FindAndPushChildRigidbodies(child, velocity);
+            FindAndPushChildRigidbodiesAndAddSkins(child, velocity, skin);
         }
     }
 

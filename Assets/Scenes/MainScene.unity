@@ -209,13 +209,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.09964043, y: -0, z: -0, w: 0.9950236}
-  m_LocalPosition: {x: 0, y: 2.4, z: -10}
+  m_LocalRotation: {x: 0.15007399, y: -0, z: -0, w: 0.98867476}
+  m_LocalPosition: {x: 0, y: 1.87, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 11.437, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 17.262, y: 0, z: 0}
 --- !u!114 &330585547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -458,7 +458,35 @@ MonoBehaviour:
   - {fileID: 930265294}
   FishPrefabs:
   - {fileID: 51991938497825665, guid: 3594148db2e151e468cb8d08ddb039ac, type: 3}
-  FishSkins: []
+  FishSkins:
+  - {fileID: 3357464446645404416, guid: b29ad173c8c783246ac7c7d8e2d59f9a, type: 3}
+  - {fileID: 8538627589217262593, guid: b326269bafd67424c91304f61c382aef, type: 3}
+  - {fileID: 2646805778912476441, guid: fc463638f5bf429498c032aa5f54d06b, type: 3}
+  - {fileID: 2455433182918237108, guid: 8e0c3648ab983a7478689b060cc05cb2, type: 3}
+  - {fileID: 8955905475506927623, guid: d1d2382376fb66d498e64bf2d629aaec, type: 3}
+  - {fileID: 8964321755426778366, guid: 2d33871dafa30b54da6595c26fec7fce, type: 3}
+  - {fileID: 911798090348252114, guid: 663ddedf9539a2044abb6075f6f05d37, type: 3}
+  - {fileID: 5528804878171039150, guid: 7d69beb9f781f6c46b7366f20f5f63c9, type: 3}
+  - {fileID: 291821509373216079, guid: cf7f8e31fa5f36d458bb1a793e972c8e, type: 3}
+  - {fileID: 5669134607138490964, guid: 2b0263283e984464db2b3b89ae85a947, type: 3}
+  - {fileID: 3160152450318029375, guid: a709918350ce36f4683f99e0191a57e7, type: 3}
+  - {fileID: 1086003567548374669, guid: 11908b254c892f84d9e880df666d1eee, type: 3}
+  - {fileID: 8714548721253218475, guid: 6aee2759067642b4284705ccaf3b1c6d, type: 3}
+  - {fileID: 5870561141333622693, guid: a634e2003f0fb1b4fa8eec1f0d20e274, type: 3}
+  - {fileID: 1995786048360287429, guid: 3fb13ccb4dd66eb42a045c83c59f5493, type: 3}
+  - {fileID: 4183163858650139225, guid: cbfbace1d7624224eb6b535cd12d8bfe, type: 3}
+  - {fileID: 2664943067653013015, guid: 45911a4dde0d2b14794604daa6937634, type: 3}
+  - {fileID: 7928458970453641090, guid: 360088943c6e6964cb29bb4029fbcb6a, type: 3}
+  - {fileID: 6496767793607483792, guid: aec5927f128678246af540471205b27f, type: 3}
+  - {fileID: 2931097716795018853, guid: 8990ac06d5603024093e38dd8d6855cf, type: 3}
+  - {fileID: 8458579023853055511, guid: 50550c059a0753b47b3a13bac4dff7f9, type: 3}
+  - {fileID: 4804601365045304097, guid: 0fd60c94e5e145a4282c6b2b196b0e14, type: 3}
+  - {fileID: 5603318887058267243, guid: 012170a88675c314f99cbe154cddf434, type: 3}
+  - {fileID: 1904540131137364338, guid: f67687c8934df35469359ac3fd4ae078, type: 3}
+  - {fileID: 7349414611878720489, guid: 8f4687bfc923f5d47bfcd8ec3e90c7f3, type: 3}
+  - {fileID: 6863035989310733375, guid: af52e18cc29fbb64dbd74d2dc82e45f2, type: 3}
+  - {fileID: 232099275588336654, guid: bbab70a3cf456e041a2728a398b99b50, type: 3}
+  - {fileID: 7174150348189836751, guid: 0968784809544fd4c8bce0407ebb70eb, type: 3}
   FishPerSecond: 10
 --- !u!114 &458631086
 MonoBehaviour:
@@ -1786,6 +1814,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4628493043569556384, guid: 6c254f2d9308496409a404f2a621fc89,
+        type: 3}
+      propertyPath: reverse
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

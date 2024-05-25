@@ -59,7 +59,8 @@ public class LevelOrchestrator : MonoBehaviour
     void Spawn(FishSpawn spawn)
     {
         var spawner = spawn.SpawnPoint == SpawnPointType.leftWall ? FishSpawners[0] : FishSpawners[1];
-        spawner.SpawnFish(spawn.prefab, spawn.FishSpeed);
+        var skin = FishSkins[Random.Range(0, FishSkins.Count)];
+        spawner.SpawnFish(spawn.prefab, spawn.FishSpeed, skin);
     }
 
     void LevelFinished()
