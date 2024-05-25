@@ -44,9 +44,18 @@ public class WeaponProcessor : MonoBehaviour
 
             if (Physics.Raycast(ray, out hit, Mathf.Infinity, planeLayer))
             {
-                Vector3 spawnPosition = hit.point;
-                //Instantiate(objectToSpawn, spawnPosition, Quaternion.identity);
                 Weapons[selectedWeapon].Fire(Cat, hit.point);
+            }
+        }
+
+        if (Input.GetMouseButton(0))
+        {
+            Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
+            RaycastHit hit;
+
+            if (Physics.Raycast(ray, out hit, Mathf.Infinity, planeLayer))
+            {
+                Weapons[selectedWeapon].ContinuousFire(Cat, hit.point);
             }
         }
     }

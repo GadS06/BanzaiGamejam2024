@@ -412,6 +412,7 @@ Transform:
   m_Children:
   - {fileID: 1331414973}
   - {fileID: 1995873047}
+  - {fileID: 2017655723}
   - {fileID: 1670959261}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -430,6 +431,7 @@ MonoBehaviour:
   Weapons:
   - {fileID: 1331414972}
   - {fileID: 1995873046}
+  - {fileID: 5093054781732197419}
   - {fileID: 1670959260}
   planeLayer:
     serializedVersion: 2
@@ -1710,6 +1712,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1995873045}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &2017655723 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8701848825454172049, guid: 51ed6fed724190e4b9af192cc41ada82,
+    type: 3}
+  m_PrefabInstance: {fileID: 5093054781732197418}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3327643470318635925
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1778,6 +1786,86 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6c254f2d9308496409a404f2a621fc89, type: 3}
+--- !u!1001 &5093054781732197418
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 458631083}
+    m_Modifications:
+    - target: {fileID: 3514479305504084554, guid: 51ed6fed724190e4b9af192cc41ada82,
+        type: 3}
+      propertyPath: m_Name
+      value: Gun
+      objectReference: {fileID: 0}
+    - target: {fileID: 8701848825454172049, guid: 51ed6fed724190e4b9af192cc41ada82,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 456
+      objectReference: {fileID: 0}
+    - target: {fileID: 8701848825454172049, guid: 51ed6fed724190e4b9af192cc41ada82,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 256.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8701848825454172049, guid: 51ed6fed724190e4b9af192cc41ada82,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8701848825454172049, guid: 51ed6fed724190e4b9af192cc41ada82,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8701848825454172049, guid: 51ed6fed724190e4b9af192cc41ada82,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8701848825454172049, guid: 51ed6fed724190e4b9af192cc41ada82,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8701848825454172049, guid: 51ed6fed724190e4b9af192cc41ada82,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8701848825454172049, guid: 51ed6fed724190e4b9af192cc41ada82,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8701848825454172049, guid: 51ed6fed724190e4b9af192cc41ada82,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8701848825454172049, guid: 51ed6fed724190e4b9af192cc41ada82,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 51ed6fed724190e4b9af192cc41ada82, type: 3}
+--- !u!114 &5093054781732197419 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2089758276346956796, guid: 51ed6fed724190e4b9af192cc41ada82,
+    type: 3}
+  m_PrefabInstance: {fileID: 5093054781732197418}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dffadc79f1127084daaf425094cebaf8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
