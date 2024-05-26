@@ -17,4 +17,18 @@ public class Score : MonoBehaviour
         score += scoreToAdd;
         ui.SetScore(score);
     }
+
+    public bool TrySpend(int scoreToSpend)
+    {
+        if (score >= scoreToSpend)
+        {
+            score -= scoreToSpend;
+            ui.SetScore(score);
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
 }

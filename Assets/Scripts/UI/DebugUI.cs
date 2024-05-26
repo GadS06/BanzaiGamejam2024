@@ -8,4 +8,9 @@ public class DebugUI : MonoBehaviour
     {
         FindObjectOfType<MapUI>(true).gameObject.SetActive(true);
     }
+
+    public void OpenShop()
+    {
+        FindObjectOfType<WeaponProcessor>(true).OpenShop();
+    }
 }

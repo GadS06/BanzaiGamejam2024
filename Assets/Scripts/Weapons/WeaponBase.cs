@@ -2,6 +2,10 @@ using UnityEngine;
 
 public abstract class WeaponBase : MonoBehaviour
 {
+    public bool IsBought = false;
+
+    public int Price;
+
     public Sprite Icon;
 
     public abstract void Fire(Cat cat, Vector3 mousePos);
