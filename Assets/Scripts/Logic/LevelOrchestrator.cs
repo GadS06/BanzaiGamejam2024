@@ -96,6 +96,7 @@ public class LevelOrchestrator : MonoBehaviour
     public void StopLevel()
     {
         LevelStartTime = -100000;
+        betweenLvlUI.gameObject.SetActive(true);
     }
 
     class FishSpawn

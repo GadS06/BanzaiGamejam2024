@@ -250,10 +250,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba36e290b8780524fab8a3bfffb84f2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
+  maxHealth: 10
   currentHealth: 0
-  showAsBossHp: 0
-  scoreReward: 0
+  showAsBossHp: 1
+  scoreReward: 50
 --- !u!1001 &8812884781379037949
 PrefabInstance:
   m_ObjectHideFlags: 0

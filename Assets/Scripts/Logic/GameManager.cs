@@ -28,6 +28,8 @@ public class GameManager : MonoBehaviour
     public void GameOver()
     {
         FindObjectOfType<LevelOrchestrator>().StopLevel();
+        FindObjectOfType<BossHpUI>(true).gameObject.SetActive(false);
+        FindObjectOfType<Cat>(true).AddHp(100000);
         DespawnBosses();
     }
 
