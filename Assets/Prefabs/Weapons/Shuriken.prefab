@@ -45,8 +45,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Icon: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  NumberOfProj: 10
-  Projectile: {fileID: 6932857251767397334, guid: 4d52289e1bcba65459de9d27d4587610,
+  NumberOfProj: 3
+  Projectile: {fileID: 6932857251767397334, guid: c08615a126054da40b90166eb0549c58,
     type: 3}
-  Speed: 7
-  Spread: 5
+  Speed: 13
+  Spread: 3

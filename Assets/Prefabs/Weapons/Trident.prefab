@@ -48,4 +48,4 @@ MonoBehaviour:
   TridentPrefab: {fileID: 8820113124899569234, guid: 8303d4ce4aa80ae42a9a6c01c5397b35,
     type: 3}
   Speed: 10
-  Knockback: 3
+  Knockback: 1

@@ -47,5 +47,5 @@ MonoBehaviour:
   Icon: {fileID: 10915, guid: 0000000000000000f000000000000000, type: 0}
   HookPrefab: {fileID: 77854435186146173, guid: fcf341405e92390478d808f3dcf05546,
     type: 3}
-  Speed: 5
+  Speed: 8
   MaxThrowTime: 1
