@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsBought: 0
-  Price: 7
+  Price: 0
   Icon: {fileID: 21300000, guid: ad13ed409f19be4448eb4d72c8a13781, type: 3}
   NumberOfProj: 3
   Projectile: {fileID: 6932857251767397334, guid: c08615a126054da40b90166eb0549c58,

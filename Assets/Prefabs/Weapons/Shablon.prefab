@@ -45,10 +45,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsBought: 0
-  Price: 6
+  Price: 0
   Icon: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   bullet: {fileID: 6932857251767397334, guid: 4d52289e1bcba65459de9d27d4587610, type: 3}
   speed: 16
   BulletPerSecond: 4
-  LastShotTime: 1
+  LastShotTime: 0
   Knockback: 1

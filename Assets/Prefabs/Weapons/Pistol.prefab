@@ -44,11 +44,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dffadc79f1127084daaf425094cebaf8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IsBought: 0
-  Price: 4
-  Icon: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-  bullet: {fileID: 6932857251767397334, guid: 4d52289e1bcba65459de9d27d4587610, type: 3}
-  speed: 16
-  BulletPerSecond: 4
-  LastShotTime: 10
+  IsBought: 1
+  Price: 0
+  Icon: {fileID: 21300000, guid: 50ab2e58f3ae54f4eb0266f79ee654d1, type: 3}
+  bullet: {fileID: 6932857251767397334, guid: fd4292196abd2bb43a73614f5c3d2dcc, type: 3}
+  speed: 15
+  BulletPerSecond: 2
+  LastShotTime: 0
   Knockback: 1
