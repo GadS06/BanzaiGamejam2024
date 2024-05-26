@@ -28,7 +28,7 @@ public class Gravity : MonoBehaviour
         }
 
         var height = instance.GetHeight(transform.position);
-        if (height.HasValue && height.Value > transform.position.y + 0.3f)
+        if (height.HasValue && height.Value < transform.position.y + 0.3f)
         {
             rb.AddForce(Physics.gravity, ForceMode.Acceleration);
         }
