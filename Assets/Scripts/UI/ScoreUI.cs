@@ -9,7 +9,7 @@ public class ScoreUI : MonoBehaviour
 
     public void SetScore(int score)
     {
-        text.text = $"{score}";
+        text.text = $"{score} рыбов";
     }
 
     // Start is called before the first frame update

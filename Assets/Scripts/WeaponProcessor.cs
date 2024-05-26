@@ -3,7 +3,9 @@ using UnityEngine;
 
 public class WeaponProcessor : MonoBehaviour
 {
-    public List<WeaponBase> Weapons;
+    public List<WeaponBase> AllWeaponsInTheGame;
+
+    public List<WeaponBase> EquippedWeapons;
 
     public LayerMask planeLayer;
 
@@ -19,7 +21,7 @@ public class WeaponProcessor : MonoBehaviour
     {
         mainCamera = Camera.main;
 
-        ui.SetWeapons(Weapons, selectedWeapon);
+        ui.SetWeapons(EquippedWeapons, selectedWeapon);
     }
 
     private void Update()
@@ -44,7 +46,7 @@ public class WeaponProcessor : MonoBehaviour
 
             if (Physics.Raycast(ray, out hit, Mathf.Infinity, planeLayer))
             {
-                Weapons[selectedWeapon].Fire(Cat, hit.point);
+                EquippedWeapons[selectedWeapon].Fire(Cat, hit.point);
             }
         }
 
@@ -55,7 +57,7 @@ public class WeaponProcessor : MonoBehaviour
 
             if (Physics.Raycast(ray, out hit, Mathf.Infinity, planeLayer))
             {
-                Weapons[selectedWeapon].ContinuousFire(Cat, hit.point);
+                EquippedWeapons[selectedWeapon].ContinuousFire(Cat, hit.point);
             }
         }
     }
@@ -63,8 +65,37 @@ public class WeaponProcessor : MonoBehaviour
     private void Select(int n)
     {
         selectedWeapon = n;
-        if (selectedWeapon >= Weapons.Count)
-            selectedWeapon = Weapons.Count - 1;
-        ui.SetWeapons(Weapons, selectedWeapon);
+        if (selectedWeapon >= EquippedWeapons.Count)
+            selectedWeapon = EquippedWeapons.Count - 1;
+        ui.SetWeapons(EquippedWeapons, selectedWeapon);
+    }
+
+    public void EquipWeapon(WeaponBase weapon, int weaponSlot)
+    {
+        while (EquippedWeapons.Count <= weaponSlot)
+        {
+            EquippedWeapons.Add(null);
+        }
+
+        EquippedWeapons[weaponSlot] = weapon;
+        ui.SetWeapons(EquippedWeapons, selectedWeapon);
+    }
+
+    public void BuyWeapon(WeaponBase weapon)
+    {
+        var score = FindObjectOfType<Score>();
+        bool success = score.TrySpend(weapon.Price);
+        if (success)
+        {
+            weapon.IsBought = true;
+            FindObjectOfType<ShopUI>(true).Reload(AllWeaponsInTheGame);
+        }
+    }
+
+    public void OpenShop()
+    {
+        var shop = FindObjectOfType<ShopUI>(true);
+        shop.gameObject.SetActive(true);
+        shop.Reload(AllWeaponsInTheGame);
     }
 }
