@@ -14,9 +14,8 @@ public class Cat : MonoBehaviour
     public LayerMask groundLayer;
 
     public Rigidbody rb;
-    private Buoyancy buoyancy;
+    public Buoyancy buoyancy;
     public bool isGrounded;
-    public bool isOnWater;
 
     private Slider catHp;
 
@@ -31,7 +30,7 @@ public class Cat : MonoBehaviour
     private void Update()
     {
         // Check if the player is grounded
-        isGrounded = Physics.Raycast(groundCheck.position, -transform.up, 0.1f, groundLayer);
+        isGrounded = Physics.Raycast(groundCheck.position + transform.up * 0.1f, -transform.up, 0.2f, groundLayer);
 
         // Handle player input for movement
         AccelerateHorVel();
