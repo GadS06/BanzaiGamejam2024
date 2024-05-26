@@ -10,6 +10,7 @@ public class FishBoxSpawner : MonoBehaviour
     {
         Vector3 spawnPoint = GetRandomPointInBoxCollider(spawnArea);
         var newOne = Instantiate(prefab, spawnPoint, Quaternion.identity);
+        newOne.transform.position = new Vector3(newOne.transform.position.x, newOne.transform.position.y, 0);
         var velocity = horSpeed * new Vector3(Random.Range(0.8f, 1.2f), Random.Range(-0.2f, 0.2f), 0);
         FindAndPushChildRigidbodiesAndAddSkins(newOne.transform, velocity, skin);
     }

@@ -163,6 +163,7 @@ GameObject:
   - component: {fileID: 2306935819155865792}
   - component: {fileID: 3856565174018696109}
   - component: {fileID: -5976654714886690125}
+  - component: {fileID: 2897422448304970112}
   m_Layer: 10
   m_Name: Fish
   m_TagString: Untagged
@@ -211,7 +212,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 8
   m_CollisionDetection: 0
 --- !u!114 &-5976654714886690125
 MonoBehaviour:
@@ -225,3 +226,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a42ded67164f1f4696c22f583913288, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2897422448304970112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6456243851222468266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ae9ff8e65d30dd4d8fddb09d4ec9037, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WaterVolumeHelper: {fileID: 0}
