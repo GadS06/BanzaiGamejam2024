@@ -11,6 +11,7 @@ public class Level : ScriptableObject
     public Material WaterMaterialUp;
     public Material WaterMaterialSide;
     public Material Skybox;
+    public GameObject Boss;
 }
 
 [Serializable]

@@ -39,25 +39,29 @@ public class WeaponProcessor : MonoBehaviour
         if (Input.GetButtonDown("Hotkey 6"))
             Select(5);
 
-        if (Input.GetMouseButtonDown(0))
+        if (!Cat.buoyancy.floating)
         {
-            Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
-            RaycastHit hit;
 
-            if (Physics.Raycast(ray, out hit, Mathf.Infinity, planeLayer))
+            if (Input.GetMouseButtonDown(0))
             {
-                EquippedWeapons[selectedWeapon].Fire(Cat, hit.point);
+                Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
+                RaycastHit hit;
+
+                if (Physics.Raycast(ray, out hit, Mathf.Infinity, planeLayer))
+                {
+                    EquippedWeapons[selectedWeapon].Fire(Cat, hit.point);
+                }
             }
-        }
 
-        if (Input.GetMouseButton(0))
-        {
-            Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
-            RaycastHit hit;
-
-            if (Physics.Raycast(ray, out hit, Mathf.Infinity, planeLayer))
+            if (Input.GetMouseButton(0))
             {
-                EquippedWeapons[selectedWeapon].ContinuousFire(Cat, hit.point);
+                Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
+                RaycastHit hit;
+
+                if (Physics.Raycast(ray, out hit, Mathf.Infinity, planeLayer))
+                {
+                    EquippedWeapons[selectedWeapon].ContinuousFire(Cat, hit.point);
+                }
             }
         }
     }

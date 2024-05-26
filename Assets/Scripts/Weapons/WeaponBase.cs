@@ -16,6 +16,7 @@ public abstract class WeaponBase : MonoBehaviour
     {
         var dir = (mousePos - cat.rb.position).normalized;
         var newOne = Instantiate(prefab, cat.transform.position, Quaternion.LookRotation(dir, Vector3.back));
+        newOne.transform.position = new Vector3(newOne.transform.position.x, newOne.transform.position.y, 0);
         newOne.velocity = dir * speed;
         return newOne;
     }
