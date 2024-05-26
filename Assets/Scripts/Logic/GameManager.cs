@@ -15,8 +15,7 @@ public class GameManager : MonoBehaviour
             var level = Levels[number];
 
             var orch = FindObjectOfType<LevelOrchestrator>();
-            orch.CurrentLevel = level;
-            orch.LevelStartTime = Time.time;
+            orch.StartLevel(level);
 
             WaterUp.material = level.WaterMaterialUp;
             WaterSide.material = level.WaterMaterialSide;

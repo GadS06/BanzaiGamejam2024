@@ -1,12 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static Cinemachine.DocumentationSortingAttribute;
 
 public class LevelOrchestrator : MonoBehaviour
 {
     public Level CurrentLevel;
     private List<FishSpawn> Spawns;
-    private int NextSpawn = 0;
+    public int NextSpawn = 0;
     public List<FishBoxSpawner> FishSpawners;
     public List<GameObject> FishPrefabs;
     public List<GameObject> FishSkins;
@@ -17,8 +18,15 @@ public class LevelOrchestrator : MonoBehaviour
     public void Start()
     {
         betweenLvlUI = FindObjectOfType<BetweenLvlUI>(true);
-        PrepareSpawns();
+        StopLevel();
+    }
+
+    public void StartLevel(Level level)
+    {
+        CurrentLevel = level;
         LevelStartTime = Time.time;
+        NextSpawn = 0;
+        PrepareSpawns();
     }
 
     public void Update()
