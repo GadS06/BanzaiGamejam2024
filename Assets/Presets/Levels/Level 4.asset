@@ -100,6 +100,19 @@ MonoBehaviour:
     Count: 2
     SpawnPoint: 1
     FishSpeed: -7
-  WaterMaterialUp: {fileID: 2100000, guid: b42107bafda036842a110eb771d350a9, type: 2}
-  WaterMaterialSide: {fileID: 2100000, guid: af751b1652e841744a4b84343f9464c6, type: 2}
-  Skybox: {fileID: 2100000, guid: d9dca9ae1786c394f9e79c637aa9a7bf, type: 2}
+  - Prefab: {fileID: 51991938497825665, guid: 329c925d03c37a34c9a9e97ba93253cc, type: 3}
+    Start: 1
+    Finish: 60
+    Count: 20
+    SpawnPoint: 1
+    FishSpeed: -7
+  - Prefab: {fileID: 51991938497825665, guid: f73666b520d24ac4183d4204c4906205, type: 3}
+    Start: 1
+    Finish: 60
+    Count: 20
+    SpawnPoint: 1
+    FishSpeed: -7
+  WaterMaterialUp: {fileID: 2100000, guid: bfee5ad0ae22df84a99d5dc9200540f3, type: 2}
+  WaterMaterialSide: {fileID: 2100000, guid: 2fe384ebc59055d469c945b2288cea78, type: 2}
+  Skybox: {fileID: 2100000, guid: e2341a9d03e86ec4290c72b1e22bbc7c, type: 2}
+  Boss: {fileID: 0}

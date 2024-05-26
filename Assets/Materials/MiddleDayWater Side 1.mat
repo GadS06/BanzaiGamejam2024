@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: HighDayWater
+  m_Name: MiddleDayWater Side 1
   m_Shader: {fileID: -6465566751694194690, guid: 2cddf2ee6a74aca44af00f5a49bd2cf1,
     type: 3}
   m_Parent: {fileID: 0}
@@ -113,7 +113,7 @@ Material:
     - Vector1_F38B44AA: 0.4
     - _AlphaClip: 0
     - _AlphaToMask: 0
-    - _AlternativeOpacity: 0
+    - _AlternativeOpacity: 1
     - _Blend: 0
     - _BlendModePreserveSpecular: 1
     - _BumpScale: 1
@@ -131,7 +131,7 @@ Material:
     - _GlossyReflections: 0
     - _Metallic: 0
     - _OcclusionStrength: 1
-    - _Opacity: 1
+    - _Opacity: 0.5
     - _Parallax: 0.005
     - _QueueControl: 1
     - _QueueOffset: 0
@@ -142,8 +142,8 @@ Material:
     - _SrcBlend: 1
     - _SrcBlendAlpha: 1
     - _Surface: 0
-    - _WaveFrequency: 0.3
-    - _WaveScale: 1.5
+    - _WaveFrequency: 0.22
+    - _WaveScale: 1.2
     - _WaveSpeed: 1.5
     - _WorkflowMode: 1
     - _ZWrite: 1
