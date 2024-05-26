@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 6776921999056659675}
   - component: {fileID: 8820113124899569234}
   - component: {fileID: 8619897795207845833}
+  - component: {fileID: 7196829985054708855}
   m_Layer: 9
   m_Name: TridentProj
   m_TagString: Untagged
@@ -147,6 +148,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a42ded67164f1f4696c22f583913288, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &7196829985054708855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6947718236345827334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 584118e2a8a38a741a45db2cb86e1d5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 1024
+  damage: 1
 --- !u!1001 &2088922959817060463
 PrefabInstance:
   m_ObjectHideFlags: 0
