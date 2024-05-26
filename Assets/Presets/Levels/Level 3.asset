@@ -12,16 +12,113 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77dafcbc2744d454d8a76f90c7661f35, type: 3}
   m_Name: Level 3
   m_EditorClassIdentifier: 
-  duration: 10
+  duration: 60
   Spawns:
   - Prefab: {fileID: 6456243851222468266, guid: 2c0ef4ad5429e4c4dac5d20cfa30b6ca,
       type: 3}
     Start: 0
     Finish: 15
-    Count: 15
+    Count: 10
     SpawnPoint: 0
     FishSpeed: 3
+  - Prefab: {fileID: 6456243851222468266, guid: 2c0ef4ad5429e4c4dac5d20cfa30b6ca,
+      type: 3}
+    Start: 15
+    Finish: 30
+    Count: 10
+    SpawnPoint: 0
+    FishSpeed: 3
+  - Prefab: {fileID: 6456243851222468266, guid: 2c0ef4ad5429e4c4dac5d20cfa30b6ca,
+      type: 3}
+    Start: 30
+    Finish: 45
+    Count: 8
+    SpawnPoint: 0
+    FishSpeed: 3
+  - Prefab: {fileID: 6456243851222468266, guid: 2c0ef4ad5429e4c4dac5d20cfa30b6ca,
+      type: 3}
+    Start: 45
+    Finish: 60
+    Count: 6
+    SpawnPoint: 0
+    FishSpeed: 7
+  - Prefab: {fileID: 6456243851222468266, guid: 2c0ef4ad5429e4c4dac5d20cfa30b6ca,
+      type: 3}
+    Start: 1
+    Finish: 15
+    Count: 10
+    SpawnPoint: 1
+    FishSpeed: -3
+  - Prefab: {fileID: 6456243851222468266, guid: 2c0ef4ad5429e4c4dac5d20cfa30b6ca,
+      type: 3}
+    Start: 15
+    Finish: 30
+    Count: 10
+    SpawnPoint: 1
+    FishSpeed: -4
+  - Prefab: {fileID: 6456243851222468266, guid: 2c0ef4ad5429e4c4dac5d20cfa30b6ca,
+      type: 3}
+    Start: 30
+    Finish: 45
+    Count: 8
+    SpawnPoint: 1
+    FishSpeed: -2.5
+  - Prefab: {fileID: 6456243851222468266, guid: 2c0ef4ad5429e4c4dac5d20cfa30b6ca,
+      type: 3}
+    Start: 45
+    Finish: 60
+    Count: 8
+    SpawnPoint: 1
+    FishSpeed: -5
+  - Prefab: {fileID: 51991938497825665, guid: dc7b9c5da787b034b94717df4482e1ae, type: 3}
+    Start: 35
+    Finish: 40
+    Count: 3
+    SpawnPoint: 0
+    FishSpeed: 4
+  - Prefab: {fileID: 51991938497825665, guid: 301ee70d1065ea34fba68deb45a9f54b, type: 3}
+    Start: 15
+    Finish: 20
+    Count: 3
+    SpawnPoint: 1
+    FishSpeed: -3
+  - Prefab: {fileID: 51991938497825665, guid: 539a4dbfb4910ae4f82733efbcb27246, type: 3}
+    Start: 52
+    Finish: 60
+    Count: 3
+    SpawnPoint: 0
+    FishSpeed: 5
+  - Prefab: {fileID: 51991938497825665, guid: 424aba7d233acce4ca4b4d11d6db64b2, type: 3}
+    Start: 24
+    Finish: 26
+    Count: 2
+    SpawnPoint: 1
+    FishSpeed: -7
+  - Prefab: {fileID: 51991938497825665, guid: 424aba7d233acce4ca4b4d11d6db64b2, type: 3}
+    Start: 24
+    Finish: 26
+    Count: 2
+    SpawnPoint: 1
+    FishSpeed: -7
+  - Prefab: {fileID: 51991938497825665, guid: 2d8db02eb74664342982f81c13306630, type: 3}
+    Start: 9
+    Finish: 10
+    Count: 1
+    SpawnPoint: 1
+    FishSpeed: -7
+  - Prefab: {fileID: 51991938497825665, guid: 2d8db02eb74664342982f81c13306630, type: 3}
+    Start: 9
+    Finish: 10
+    Count: 1
+    SpawnPoint: 0
+    FishSpeed: 7
+  - Prefab: {fileID: 51991938497825665, guid: 26fb8d634af8adf429f4ba965b0f2356, type: 3}
+    Start: 10
+    Finish: 60
+    Count: 5
+    SpawnPoint: 0
+    FishSpeed: 7
   WaterMaterialUp: {fileID: 2100000, guid: b42107bafda036842a110eb771d350a9, type: 2}
   WaterMaterialSide: {fileID: 2100000, guid: af751b1652e841744a4b84343f9464c6, type: 2}
-  Skybox: {fileID: 2100000, guid: 85cf0b004bc4a654b9e501efcce47902, type: 2}
-  Boss: {fileID: 3592095589868748023, guid: d73e4cea6c6ee1a4e89bda1d52171d65, type: 3}
+  Skybox: {fileID: 2100000, guid: d9dca9ae1786c394f9e79c637aa9a7bf, type: 2}
+  Boss: {fileID: 0}
