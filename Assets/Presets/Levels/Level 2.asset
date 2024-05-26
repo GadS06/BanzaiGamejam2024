@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77dafcbc2744d454d8a76f90c7661f35, type: 3}
+  m_Name: Level 2
+  m_EditorClassIdentifier: 
+  duration: 30
+  Spawns:
+  - Prefab: {fileID: 6456243851222468266, guid: 2c0ef4ad5429e4c4dac5d20cfa30b6ca,
+      type: 3}
+    Start: 0
+    Finish: 28
+    Count: 15
+    SpawnPoint: 0
+    FishSpeed: 3
+  - Prefab: {fileID: 6456243851222468266, guid: 2c0ef4ad5429e4c4dac5d20cfa30b6ca,
+      type: 3}
+    Start: 2
+    Finish: 30
+    Count: 15
+    SpawnPoint: 1
+    FishSpeed: -3
+  - Prefab: {fileID: 51991938497825665, guid: 3594148db2e151e468cb8d08ddb039ac, type: 3}
+    Start: 10
+    Finish: 15
+    Count: 5
+    SpawnPoint: 0
+    FishSpeed: 5
+  - Prefab: {fileID: 51991938497825665, guid: 3594148db2e151e468cb8d08ddb039ac, type: 3}
+    Start: 15
+    Finish: 20
+    Count: 5
+    SpawnPoint: 1
+    FishSpeed: -5
+  - Prefab: {fileID: 6456243851222468266, guid: 2c0ef4ad5429e4c4dac5d20cfa30b6ca,
+      type: 3}
+    Start: 20
+    Finish: 25
+    Count: 100
+    SpawnPoint: 0
+    FishSpeed: 7
+  WaterMaterialUp: {fileID: 2100000, guid: bfee5ad0ae22df84a99d5dc9200540f3, type: 2}
+  WaterMaterialSide: {fileID: 2100000, guid: 2fe384ebc59055d469c945b2288cea78, type: 2}
+  Skybox: {fileID: 2100000, guid: d9dca9ae1786c394f9e79c637aa9a7bf, type: 2}

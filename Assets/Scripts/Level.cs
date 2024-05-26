@@ -8,6 +8,9 @@ public class Level : ScriptableObject
 {
     public float duration = 60;
     public List<Spawn> Spawns;
+    public Material WaterMaterialUp;
+    public Material WaterMaterialSide;
+    public Material Skybox;
 }
 
 [Serializable]

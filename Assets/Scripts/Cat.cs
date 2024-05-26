@@ -3,6 +3,7 @@ using UnityEngine;
 public class Cat : MonoBehaviour
 {
     public float moveSpeed = 5f;
+    public float waterMoveSpeed = 5f;
     public float jumpForce = 10f;
     public float horAcceleration = 40f;
     public float airDeceleration = 10f;
@@ -10,11 +11,14 @@ public class Cat : MonoBehaviour
     public LayerMask groundLayer;
 
     public Rigidbody rb;
+    private Buoyancy buoyancy;
     public bool isGrounded;
+    public bool isOnWater;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
+        buoyancy = GetComponent<Buoyancy>();
     }
 
     private void Update()
@@ -26,7 +30,7 @@ public class Cat : MonoBehaviour
         AccelerateHorVel();
 
         // Handle player input for jumping
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
+        if (Input.GetKeyDown(KeyCode.Space) && (isGrounded || buoyancy.floating))
         {
             rb.velocity = new Vector3(rb.velocity.x, jumpForce, 0);
         }
@@ -35,7 +39,7 @@ public class Cat : MonoBehaviour
     private void AccelerateHorVel()
     {
         float moveInput = Input.GetAxisRaw("Horizontal");
-        var desired = moveInput * moveSpeed;
+        var desired = moveInput * (buoyancy.floating ? waterMoveSpeed : moveSpeed);
 
         // если есть инпут
         if (Mathf.Abs(moveInput) > 0)
