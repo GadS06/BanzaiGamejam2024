@@ -56,6 +56,8 @@ public class Cat : MonoBehaviour
         {
             animator.SetBool("Run", true);
 
+            animator.transform.rotation = Quaternion.Euler(0, 90 * Mathf.Sign(desired), 0);
+
             // если мы уже движемся туда с достаточной скоростью, то ничего
             if (Mathf.Sign(desired) == Mathf.Sign(rb.velocity.x)
                 && Mathf.Abs(rb.velocity.x) >= Mathf.Abs(desired))
