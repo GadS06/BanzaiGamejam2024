@@ -25,4 +25,21 @@ public class GameManager : MonoBehaviour
             FindObjectOfType<BossHpUI>(true).gameObject.SetActive(false);
         }
     }
+
+    public void GameOver()
+    {
+        FindObjectOfType<LevelOrchestrator>().StopLevel();
+        DespawnBosses();
+    }
+
+    public void DespawnBosses()
+    {
+        foreach (var hp in FindObjectsOfType<Health>(true))
+        {
+            if (hp.showAsBossHp)
+            {
+                Destroy(hp.gameObject);
+            }
+        }
+    }
 }

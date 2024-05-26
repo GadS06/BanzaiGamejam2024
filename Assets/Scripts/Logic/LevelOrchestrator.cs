@@ -67,6 +67,11 @@ public class LevelOrchestrator : MonoBehaviour
 
     }
 
+    public void StopLevel()
+    {
+        LevelStartTime = -100000;
+    }
+
     class FishSpawn
     {
         public float time;
