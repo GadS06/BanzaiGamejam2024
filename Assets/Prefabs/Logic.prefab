@@ -78,18 +78,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentLevel: {fileID: 11400000, guid: 1ae95e43fd0726949bf2f819f12a24a7, type: 2}
+  NextSpawn: 0
   FishSpawners:
   - {fileID: 0}
   - {fileID: 0}
   FishPrefabs:
+  - {fileID: 6456243851222468266, guid: 2c0ef4ad5429e4c4dac5d20cfa30b6ca, type: 3}
   - {fileID: 51991938497825665, guid: 3594148db2e151e468cb8d08ddb039ac, type: 3}
+  - {fileID: 51991938497825665, guid: f73666b520d24ac4183d4204c4906205, type: 3}
+  - {fileID: 51991938497825665, guid: dc7b9c5da787b034b94717df4482e1ae, type: 3}
+  - {fileID: 51991938497825665, guid: 301ee70d1065ea34fba68deb45a9f54b, type: 3}
+  - {fileID: 51991938497825665, guid: e9f6eb00459e4d14abea9f61a9b7dc1a, type: 3}
+  - {fileID: 51991938497825665, guid: 539a4dbfb4910ae4f82733efbcb27246, type: 3}
+  - {fileID: 51991938497825665, guid: 7263eeff82f3af74dac96f2f81d46c59, type: 3}
+  - {fileID: 51991938497825665, guid: 4e5a15ee3e86c0a44b05e1b4eeb76a27, type: 3}
+  - {fileID: 51991938497825665, guid: d9f439db7be966843b0ae2df1da2598d, type: 3}
+  - {fileID: 51991938497825665, guid: 424aba7d233acce4ca4b4d11d6db64b2, type: 3}
+  - {fileID: 51991938497825665, guid: 329c925d03c37a34c9a9e97ba93253cc, type: 3}
+  - {fileID: 51991938497825665, guid: a752cc671af1d5e4692def9751714d87, type: 3}
+  - {fileID: 51991938497825665, guid: a0af226872bdf0548b7f538a49418c67, type: 3}
+  - {fileID: 51991938497825665, guid: 45a0f313a133c8947b7bbe7cf9d14876, type: 3}
+  - {fileID: 51991938497825665, guid: f45a034f3d186c74e85bef1bfaa9df50, type: 3}
+  - {fileID: 51991938497825665, guid: bb2f920dc68b63d4882ae47655aed8e8, type: 3}
+  - {fileID: 51991938497825665, guid: 5acebac3395a303498df68049ca631fb, type: 3}
   FishSkins:
   - {fileID: 3357464446645404416, guid: b29ad173c8c783246ac7c7d8e2d59f9a, type: 3}
   - {fileID: 8538627589217262593, guid: b326269bafd67424c91304f61c382aef, type: 3}
-  - {fileID: 2646805778912476441, guid: fc463638f5bf429498c032aa5f54d06b, type: 3}
   - {fileID: 2455433182918237108, guid: 8e0c3648ab983a7478689b060cc05cb2, type: 3}
   - {fileID: 8955905475506927623, guid: d1d2382376fb66d498e64bf2d629aaec, type: 3}
-  - {fileID: 8964321755426778366, guid: 2d33871dafa30b54da6595c26fec7fce, type: 3}
   - {fileID: 911798090348252114, guid: 663ddedf9539a2044abb6075f6f05d37, type: 3}
   - {fileID: 5528804878171039150, guid: 7d69beb9f781f6c46b7366f20f5f63c9, type: 3}
   - {fileID: 291821509373216079, guid: cf7f8e31fa5f36d458bb1a793e972c8e, type: 3}
@@ -99,7 +115,6 @@ MonoBehaviour:
   - {fileID: 8714548721253218475, guid: 6aee2759067642b4284705ccaf3b1c6d, type: 3}
   - {fileID: 5870561141333622693, guid: a634e2003f0fb1b4fa8eec1f0d20e274, type: 3}
   - {fileID: 1995786048360287429, guid: 3fb13ccb4dd66eb42a045c83c59f5493, type: 3}
-  - {fileID: 4183163858650139225, guid: cbfbace1d7624224eb6b535cd12d8bfe, type: 3}
   - {fileID: 2664943067653013015, guid: 45911a4dde0d2b14794604daa6937634, type: 3}
   - {fileID: 7928458970453641090, guid: 360088943c6e6964cb29bb4029fbcb6a, type: 3}
   - {fileID: 6496767793607483792, guid: aec5927f128678246af540471205b27f, type: 3}
@@ -141,7 +156,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Levels:
   - {fileID: 11400000, guid: 1ae95e43fd0726949bf2f819f12a24a7, type: 2}
-  - {fileID: 11400000, guid: 056c5dc01ad3f064c878c150efacc86e, type: 2}
+  - {fileID: 11400000, guid: 8073ac748139cc44c8fa9266a10af332, type: 2}
+  - {fileID: 11400000, guid: 787ccf807f589214aa78755ef22f9838, type: 2}
   WaterUp: {fileID: 0}
   WaterSide: {fileID: 0}
 --- !u!1001 &162694719774487259
