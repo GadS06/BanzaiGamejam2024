@@ -14,6 +14,7 @@ public class LevelOrchestrator : MonoBehaviour
     public float FishPerSecond;
     public float LevelStartTime;
     private BetweenLvlUI betweenLvlUI;
+    private bool bossSpawned;
 
     public void Start()
     {
@@ -26,6 +27,7 @@ public class LevelOrchestrator : MonoBehaviour
         CurrentLevel = level;
         LevelStartTime = Time.time;
         NextSpawn = 0;
+        bossSpawned = false;
         PrepareSpawns();
     }
 
@@ -33,7 +35,19 @@ public class LevelOrchestrator : MonoBehaviour
     {
         if (Time.time - LevelStartTime > CurrentLevel.duration)
         {
-            LevelFinished();
+            if (CurrentLevel.Boss != null)
+            {
+                if (!bossSpawned)
+                {
+                    var boss = Instantiate(CurrentLevel.Boss);
+                    boss.transform.position = new Vector3(10, -10, 0);
+                    bossSpawned = true;
+                }
+            }
+            else
+            {
+                LevelFinished();
+            }
         }
         else
         {
@@ -74,7 +88,7 @@ public class LevelOrchestrator : MonoBehaviour
         spawner.SpawnFish(spawn.prefab, spawn.FishSpeed, skin);
     }
 
-    void LevelFinished()
+    public void LevelFinished()
     {
         betweenLvlUI.gameObject.SetActive(true);
     }

@@ -31,6 +31,7 @@ public class Health : MonoBehaviour
         Destroy(gameObject);
         FindObjectOfType<Score>().AddScore(scoreReward);
         FindObjectOfType<BossHpUI>(true).gameObject.SetActive(false);
+        FindObjectOfType<LevelOrchestrator>().LevelFinished();
     }
 
     void UpdateUI()
