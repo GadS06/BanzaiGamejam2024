@@ -1,7 +1,10 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Cat : MonoBehaviour
 {
+    public int maxHp = 6;
+    public int hp;
     public float moveSpeed = 5f;
     public float waterMoveSpeed = 5f;
     public float jumpForce = 10f;
@@ -15,10 +18,14 @@ public class Cat : MonoBehaviour
     public bool isGrounded;
     public bool isOnWater;
 
+    private Slider catHp;
+
     private void Start()
     {
+        hp = maxHp;
         rb = GetComponent<Rigidbody>();
         buoyancy = GetComponent<Buoyancy>();
+        catHp = FindObjectOfType<CatHpUI>(true).GetComponent<Slider>();
     }
 
     private void Update()
@@ -34,6 +41,8 @@ public class Cat : MonoBehaviour
         {
             rb.velocity = new Vector3(rb.velocity.x, jumpForce, 0);
         }
+
+        UpdateUI();
     }
 
     private void AccelerateHorVel()
@@ -71,6 +80,21 @@ public class Cat : MonoBehaviour
             {
                 rb.velocity -= Vector3.right * Mathf.Sign(rb.velocity.x) * airDeceleration * Time.deltaTime;
             }
+        }
+    }
+
+    void UpdateUI()
+    {
+        if (hp == maxHp)
+        {
+            catHp.gameObject.SetActive(false);
+        }
+        else
+        {
+            catHp.gameObject.SetActive(true);
+            catHp.maxValue = maxHp;
+            catHp.minValue = 0;
+            catHp.value = hp;
         }
     }
 }
