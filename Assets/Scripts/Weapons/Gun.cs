@@ -11,6 +11,11 @@ public class Gun : WeaponBase
     public float Knockback;
 
 
+    private void Start()
+    {
+        LastShotTime = 0;
+    }
+
     public override void Fire(Cat cat, Vector3 mousePos)
     {
         Shot(bullet, speed, cat, mousePos);
