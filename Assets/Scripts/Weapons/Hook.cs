@@ -25,8 +25,12 @@ public class Hook : WeaponBase
 
     private void Update()
     {
-        if ((Input.GetMouseButtonUp(0)
-            || (Time.time - throwTime) > MaxThrowTime)
+        if (isRetracting)
+        {
+            HookInstance.velocity = (Cat.rb.position - HookInstance.position).normalized * Speed;
+        }
+
+        if ((Time.time - throwTime) > MaxThrowTime
             && HookInstance != null
             && !isRetracting)
         {
