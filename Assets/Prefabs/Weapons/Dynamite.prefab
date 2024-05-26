@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b3772414d9e8ed4dbbac9a07d58318b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Icon: {fileID: 21300000, guid: 680ed790c2e358e4ea4d8a235838c309, type: 3}
+  Icon: {fileID: 21300000, guid: 43e91f1571b0616459be485789f63d03, type: 3}
   DynamitePrefab: {fileID: 8276522785426916695, guid: b75406b11f2da454b92aad5565c467dd,
     type: 3}
   Speed: 5
