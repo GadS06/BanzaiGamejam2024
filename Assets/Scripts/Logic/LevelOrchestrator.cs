@@ -12,9 +12,11 @@ public class LevelOrchestrator : MonoBehaviour
     public List<GameObject> FishSkins;
     public float FishPerSecond;
     public float LevelStartTime;
+    private BetweenLvlUI betweenLvlUI;
 
     public void Start()
     {
+        betweenLvlUI = FindObjectOfType<BetweenLvlUI>(true);
         PrepareSpawns();
         LevelStartTime = Time.time;
     }
@@ -27,6 +29,8 @@ public class LevelOrchestrator : MonoBehaviour
         }
         else
         {
+            betweenLvlUI.gameObject.SetActive(false);
+
             while (NextSpawn < Spawns.Count
                 && Spawns[NextSpawn].time < Time.time - LevelStartTime)
             {
@@ -64,7 +68,12 @@ public class LevelOrchestrator : MonoBehaviour
 
     void LevelFinished()
     {
+        betweenLvlUI.gameObject.SetActive(true);
+    }
 
+    public void StopLevel()
+    {
+        LevelStartTime = -100000;
     }
 
     class FishSpawn

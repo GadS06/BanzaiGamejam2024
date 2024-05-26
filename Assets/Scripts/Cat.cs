@@ -97,4 +97,13 @@ public class Cat : MonoBehaviour
             catHp.value = hp;
         }
     }
+
+    public void AddHp(int _hp)
+    {
+        hp += _hp;
+        if (hp > maxHp)
+            hp = maxHp;
+        if (hp <= 0)
+            FindObjectOfType<GameManager>().GameOver();
+    }
 }
