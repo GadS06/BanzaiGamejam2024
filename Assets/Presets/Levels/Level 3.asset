@@ -121,4 +121,4 @@ MonoBehaviour:
   WaterMaterialUp: {fileID: 2100000, guid: b42107bafda036842a110eb771d350a9, type: 2}
   WaterMaterialSide: {fileID: 2100000, guid: af751b1652e841744a4b84343f9464c6, type: 2}
   Skybox: {fileID: 2100000, guid: d9dca9ae1786c394f9e79c637aa9a7bf, type: 2}
-  Boss: {fileID: 0}
+  Boss: {fileID: 3592095589868748023, guid: d73e4cea6c6ee1a4e89bda1d52171d65, type: 3}
