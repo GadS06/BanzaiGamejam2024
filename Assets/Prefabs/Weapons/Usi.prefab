@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8701848825454172049}
   - component: {fileID: 2089758276346956796}
   m_Layer: 0
-  m_Name: Gun
+  m_Name: Usi
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -44,6 +44,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dffadc79f1127084daaf425094cebaf8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IsBought: 0
+  Price: 9
   Icon: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   bullet: {fileID: 6932857251767397334, guid: 4d52289e1bcba65459de9d27d4587610, type: 3}
   speed: 16
