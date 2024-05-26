@@ -40,7 +40,7 @@ public class LevelOrchestrator : MonoBehaviour
                 if (!bossSpawned)
                 {
                     var boss = Instantiate(CurrentLevel.Boss);
-                    boss.transform.position = new Vector3(10, -10, 0);
+                    boss.transform.position = new Vector3(20 -20, 0);
                     bossSpawned = true;
                 }
             }
@@ -96,6 +96,7 @@ public class LevelOrchestrator : MonoBehaviour
     public void StopLevel()
     {
         LevelStartTime = -100000;
+        betweenLvlUI.gameObject.SetActive(true);
     }
 
     class FishSpawn
