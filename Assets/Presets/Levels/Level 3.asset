@@ -118,7 +118,7 @@ MonoBehaviour:
     Count: 5
     SpawnPoint: 0
     FishSpeed: 7
-  WaterMaterialUp: {fileID: 2100000, guid: b42107bafda036842a110eb771d350a9, type: 2}
-  WaterMaterialSide: {fileID: 2100000, guid: af751b1652e841744a4b84343f9464c6, type: 2}
+  WaterMaterialUp: {fileID: 2100000, guid: 6a380cbe0233e354f95084b72162b37c, type: 2}
+  WaterMaterialSide: {fileID: 2100000, guid: a0d2e8ac6b4f47a48a05c6d2f7fef0ea, type: 2}
   Skybox: {fileID: 2100000, guid: d9dca9ae1786c394f9e79c637aa9a7bf, type: 2}
   Boss: {fileID: 3592095589868748023, guid: d73e4cea6c6ee1a4e89bda1d52171d65, type: 3}
