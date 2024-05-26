@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsBought: 1
-  Price: 0
+  Price: 20
   Icon: {fileID: 21300000, guid: c4c7259212829794aa8aa55546a40574, type: 3}
   bullet: {fileID: 6932857251767397334, guid: fd4292196abd2bb43a73614f5c3d2dcc, type: 3}
   speed: 17
