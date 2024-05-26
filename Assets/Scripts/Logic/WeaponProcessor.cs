@@ -78,9 +78,10 @@ public class WeaponProcessor : MonoBehaviour
 
     public void EquipWeapon(WeaponBase weapon, int weaponSlot)
     {
-        while (EquippedWeapons.Count <= weaponSlot)
+        if (EquippedWeapons.Count <= weaponSlot)
         {
             EquippedWeapons.Add(null);
+            weaponSlot = EquippedWeapons.Count - 1;
         }
 
         EquippedWeapons[weaponSlot] = weapon;
