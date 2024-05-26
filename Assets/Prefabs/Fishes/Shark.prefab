@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6236621006894854583}
   - component: {fileID: 7324100518182976420}
   - component: {fileID: 6315104279247498903}
+  - component: {fileID: 1417243197011894982}
   m_Layer: 10
   m_Name: Shark
   m_TagString: Untagged
@@ -114,6 +115,20 @@ MonoBehaviour:
   rotationSpeed: 2000
   acceleration: 5
   maxSpeed: 20
+--- !u!114 &1417243197011894982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3592095589868748023}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba36e290b8780524fab8a3bfffb84f2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  currentHealth: 0
 --- !u!1001 &8812884781379037949
 PrefabInstance:
   m_ObjectHideFlags: 0

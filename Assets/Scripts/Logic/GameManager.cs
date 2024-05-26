@@ -21,6 +21,8 @@ public class GameManager : MonoBehaviour
             WaterUp.material = level.WaterMaterialUp;
             WaterSide.material = level.WaterMaterialSide;
             RenderSettings.skybox = level.Skybox;
+
+            FindObjectOfType<BossHpUI>(true).gameObject.SetActive(false);
         }
     }
 }

@@ -5,6 +5,7 @@ using UnityEngine;
 public class KillFish : MonoBehaviour
 {
     public LayerMask layerMask;
+    public int damage = 1;
 
     Score score;
 
@@ -31,8 +32,17 @@ public class KillFish : MonoBehaviour
     {
         if (((1 << collidedLayer) & layerMask) != 0)
         {
-            Destroy(other);
-            score.AddScore(1);
+            var hp = other.GetComponent<Health>();
+
+            if (!hp)
+            {
+                Destroy(other);
+                score.AddScore(1);
+            }
+            else
+            {
+                hp.TakeDamage(damage);
+            }
         }
     }
 }
