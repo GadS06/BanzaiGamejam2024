@@ -18,6 +18,7 @@ public class Cat : MonoBehaviour
     public bool isGrounded;
 
     private Slider catHp;
+    public Animator animator;
 
     private void Start()
     {
@@ -38,6 +39,7 @@ public class Cat : MonoBehaviour
         // Handle player input for jumping
         if (Input.GetKeyDown(KeyCode.Space) && (isGrounded || buoyancy.floating))
         {
+            animator.SetTrigger("Jump");
             rb.velocity = new Vector3(rb.velocity.x, jumpForce, 0);
         }
 
@@ -52,6 +54,10 @@ public class Cat : MonoBehaviour
         // если есть инпут
         if (Mathf.Abs(moveInput) > 0)
         {
+            animator.SetBool("Run", true);
+
+            animator.transform.rotation = Quaternion.Euler(0, 90 * Mathf.Sign(desired), 0);
+
             // если мы уже движемся туда с достаточной скоростью, то ничего
             if (Mathf.Sign(desired) == Mathf.Sign(rb.velocity.x)
                 && Mathf.Abs(rb.velocity.x) >= Mathf.Abs(desired))
@@ -69,6 +75,8 @@ public class Cat : MonoBehaviour
         // если нет инпута
         else
         {
+            animator.SetBool("Run", false);
+
             // если мы на земле, то жёстко тормозить
             if (isGrounded)
             {

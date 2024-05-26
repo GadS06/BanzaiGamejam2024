@@ -50,6 +50,7 @@ public class WeaponProcessor : MonoBehaviour
                 if (Physics.Raycast(ray, out hit, Mathf.Infinity, planeLayer))
                 {
                     EquippedWeapons[selectedWeapon].Fire(Cat, hit.point);
+                    Cat.animator.SetTrigger("Attack");
                 }
             }
 
@@ -61,6 +62,7 @@ public class WeaponProcessor : MonoBehaviour
                 if (Physics.Raycast(ray, out hit, Mathf.Infinity, planeLayer))
                 {
                     EquippedWeapons[selectedWeapon].ContinuousFire(Cat, hit.point);
+                    Cat.animator.SetTrigger("Attack");
                 }
             }
         }
