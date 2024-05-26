@@ -40,7 +40,7 @@ public class LevelOrchestrator : MonoBehaviour
                 if (!bossSpawned)
                 {
                     var boss = Instantiate(CurrentLevel.Boss);
-                    boss.transform.position = new Vector3(10, -10, 0);
+                    boss.transform.position = new Vector3(20 -20, 0);
                     bossSpawned = true;
                 }
             }
